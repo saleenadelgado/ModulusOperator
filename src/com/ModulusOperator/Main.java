@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         testOddness();
         keepContained();
+        lastDigit();
     }
 
     public static void testOddness() {
@@ -36,11 +37,20 @@ public class Main {
 
         System.out.println("Give me a positive number");
         number = keyboard.nextInt();
-
+    System.out.println("number contained is ");
         System.out.println((number%8)+5);
 
 
 
+    }
+
+    public static void lastDigit() {
+        int number;
+        Scanner keyboard;
+        keyboard= new Scanner(System.in);
+        System.out.println("Give me a positive number that is four digits long");
+        number = keyboard.nextInt();
+        System.out.println("The last of number digit is: " +(number%10));
 
 
 
